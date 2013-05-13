@@ -36,7 +36,10 @@ int main(int argc, char **argv)
 			for(i = 1; i < argc; ++i)
 			{
 				if(strcmp(argv[i], "-n") == 0)
+				{
 				  lineNo = atoi(argv[i+1]);
+				  break;
+				}
 			}
 			if((fp = fopen(argv[argc-1], "r")) == NULL)
 			{
